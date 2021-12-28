@@ -392,6 +392,43 @@
 
 
 
+.reviews .owl-carousel .owl-nav button.owl-prev,
+.reviews .owl-carousel .owl-nav button.owl-next
+{
+    width: 44px;
+    height: 64px;
+    margin-top: -32px;
+
+    background: none;
+}
+
+.reviews .owl-carousel .owl-nav button.owl-prev:before,
+.reviews .owl-carousel .owl-nav button.owl-next:before
+{
+    width: 32px;
+    height: 32px;
+    margin-top: -16px;
+
+    border-width: 2px;
+    border-color: #95b73c;
+}
+
+.reviews .owl-carousel .owl-nav button.owl-prev:before
+{
+    left: 0;
+
+    margin-left: 8px;
+}
+
+.reviews .owl-carousel .owl-nav button.owl-next:before
+{
+    right: 0;
+
+    margin-right: 8px;
+}
+
+
+
 .project_info .owl-carousel .owl-nav button.owl-prev,
 .project_info .owl-carousel .owl-nav button.owl-next
 {

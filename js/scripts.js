@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
 	// Основной слайдер на главной
 	$('.main_slider .slider').owlCarousel({
 		items: 1,
@@ -20,21 +20,21 @@ $(function(){
 		smartSpeed: 500,
 		margin: 20,
 		responsive: {
-	        0:{
-	            items: 2
-	        },
-	        375:{
-	            items: 3
-	        },
-	        768:{
-	            items: 4
-	        },
-	        1024:{
-	            items: 5
-	        },
-	        1286:{
-	            items: 6
-	        }
+			0: {
+				items: 2
+			},
+			375: {
+				items: 3
+			},
+			768: {
+				items: 4
+			},
+			1024: {
+				items: 5
+			},
+			1286: {
+				items: 6
+			}
 		}
 	})
 
@@ -61,8 +61,35 @@ $(function(){
 	})
 
 
+	// Отзывы
+	$('.reviews .slider').owlCarousel({
+		nav: true,
+		dots: false,
+		loop: true,
+		smartSpeed: 500,
+		responsive: {
+			0: {
+				margin: 20,
+				items: 1
+			},
+			768: {
+				margin: 24,
+				items: 2
+			},
+			1024: {
+				margin: 40,
+				items: 2
+			},
+			1280: {
+				margin: 96,
+				items: 2
+			}
+		}
+	})
+
+
 	// Моб. версия
-	if( $(window).width() < 360 ){
+	if ($(window).width() < 360) {
 		$('meta[name=viewport]').attr('content', 'width=360')
 	} else {
 		$('meta[name=viewport]').attr('content', 'width=device-width, initial-scale=1, maximum-scale=1')
@@ -71,7 +98,7 @@ $(function(){
 
 
 
-$(window).load(function(){
+$(window).load(function () {
 	// Шапка
 	headerHeight = $('header').innerHeight()
 
@@ -80,9 +107,9 @@ $(window).load(function(){
 
 
 
-$(window).resize(function(){
+$(window).resize(function () {
 	// Шапка
-	setTimeout(function(){
+	setTimeout(function () {
 		headerHeight = $('header').innerHeight()
 
 		$('.header_wrap').height('auto')
@@ -90,7 +117,7 @@ $(window).resize(function(){
 		$('header').wrap('<div class="header_wrap" style="height: ' + headerHeight + 'px"></div>')
 	}, 100)
 
-	if( $(window).scrollTop() > headerHeight ) {
+	if ($(window).scrollTop() > headerHeight) {
 		$('header').addClass('fixed')
 	} else {
 		$('header').removeClass('fixed')
@@ -99,11 +126,11 @@ $(window).resize(function(){
 
 
 
-$(window).scroll(function(){
+$(window).scroll(function () {
 	// Шапка
-	if( $(window).scrollTop() > headerHeight ) {
+	if ($(window).scrollTop() > headerHeight) {
 		$('header').addClass('fixed')
-	}else{
+	} else {
 		$('header').removeClass('fixed')
 	}
 })

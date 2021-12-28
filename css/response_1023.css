@@ -414,6 +414,29 @@
 
 
 
+    .reviews .review .author
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .reviews .review .btns
+    {
+        margin-left: -12px;
+    }
+
+    .reviews .review .btns .btn
+    {
+        font-size: 13px;
+        line-height: 36px;
+
+        width: 148px;
+        height: 40px;
+        margin-left: 12px;
+    }
+
+
+
     /*---------------
         Footer
     ---------------*/

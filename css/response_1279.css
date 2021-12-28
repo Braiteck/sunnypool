@@ -520,6 +520,59 @@
 
 
 
+    .reviews .slider
+    {
+        padding: 0 40px;
+    }
+
+
+    .reviews .review .author
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .reviews .review .btns
+    {
+        margin-top: 20px;
+        margin-left: -20px;
+    }
+
+    .reviews .review .btns .btn
+    {
+        font-size: 14px;
+        line-height: 40px;
+
+        width: 180px;
+        height: 44px;
+        margin-left: 20px;
+    }
+
+
+    .reviews .owl-carousel .owl-nav button.owl-prev:before,
+    .reviews .owl-carousel .owl-nav button.owl-next:before
+    {
+        width: 24px;
+        height: 24px;
+        margin-top: -12px;
+    }
+
+    .reviews .owl-carousel .owl-nav button.owl-prev:before
+    {
+        left: -16px;
+
+        margin-left: 0;
+    }
+
+    .reviews .owl-carousel .owl-nav button.owl-next:before
+    {
+        right: -16px;
+
+        margin-right: 0;
+    }
+
+
+
     /*---------------
 		Footer
 	---------------*/
