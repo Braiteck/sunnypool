@@ -1,0 +1,458 @@
+@media (max-width: 1023px)
+{
+    /*---------------
+        Main styles
+    ---------------*/
+    :root
+    {
+        --font_size_title: 38px;
+    }
+
+
+    .block_head
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .page_head
+    {
+        padding-top: 20px;
+
+        border-top: 1px solid #ddd;
+    }
+
+
+    .breadcrumbs
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    .form .submit .agree
+    {
+        max-width: calc(100% - 220px);
+    }
+
+
+
+    .content_flex .content
+    {
+        width: 100%;
+    }
+
+
+
+    /*---------------
+        Header
+    ---------------*/
+    .header_wrap
+    {
+        height: 0 !important;
+    }
+
+
+    .mob_header
+    {
+        display: block;
+    }
+
+
+    header
+    {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 0;
+
+        width: 270px;
+        height: auto;
+        margin: 0;
+
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+
+        background: #fff;
+    }
+
+    header.fixed
+    {
+        position: absolute;
+
+        animation: none;
+    }
+
+    header.show
+    {
+        transform: translateX(0);
+    }
+
+
+    header .mob_scroll
+    {
+        display: flex;
+        overflow: auto;
+
+        height: 100vh;
+        padding: 0;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    header .mob_scroll > *
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+
+
+    header .logo
+    {
+        display: none;
+    }
+
+
+    header .menu
+    {
+        padding: 15px 0;
+    }
+
+    header .menu .item
+    {
+        width: 100%;
+    }
+
+    header .menu .item + .item
+    {
+        margin-top: 1px;
+        margin-left: 0;
+    }
+
+    header .menu .item > a
+    {
+        display: inline-block;
+
+        vertical-align: top;
+    }
+
+
+    header .contacts,
+    header .adres
+    {
+        display: block;
+
+        width: calc(100% + 40px);
+        margin: 0 -20px;
+        padding: 15px 20px;
+
+        border-top: 1px solid #ddd;
+    }
+
+    header .adres br
+    {
+        display: none;
+    }
+
+
+
+    /*---------------
+        Sidebar
+    ---------------*/
+    aside
+    {
+        width: 100%;
+    }
+
+    .content + aside
+    {
+        margin-top: 40px;
+    }
+
+
+
+    aside .service_inform
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
+
+    /*---------------
+        Main section
+    ---------------*/
+    .main_slider .slide .cont
+    {
+        min-height: 400px;
+    }
+
+    .main_slider .slide .info
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+
+    .projects .flex > *
+    {
+        width: calc(33.333% - 20px);
+    }
+
+    .projects .flex > *.tablet_hide
+    {
+        display: none;
+    }
+
+
+
+    .services .flex
+    {
+        justify-content: center;
+    }
+
+    .services .flex > *
+    {
+        width: calc(25% - 20px);
+    }
+
+
+
+    .about .info
+    {
+        width: 100%;
+    }
+
+    .about .info .links
+    {
+        margin-top: 30px;
+        margin-left: -30px;
+    }
+
+    .about .info .links > *
+    {
+        margin-left: 30px;
+    }
+
+
+    .about .advantages
+    {
+        display: flex;
+
+        width: 100%;
+        margin-top: 30px;
+        padding: 40px 75px;
+
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .about .advantages .item
+    {
+        width: calc(50% - 15px);
+    }
+
+    .about .advantages .item + .item
+    {
+        margin-top: 0;
+    }
+
+    .about .advantages .item:nth-child(3),
+    .about .advantages .item:nth-child(4)
+    {
+        margin-top: 20px;
+    }
+
+
+
+    .news .item .info
+    {
+        padding: 15px;
+    }
+
+    .news .item .name
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+
+    .articles .flex > *
+    {
+        width: calc(33.333% - 20px);
+    }
+
+    .articles .flex > *.tablet_hide
+    {
+        display: none;
+    }
+
+
+
+    .clients .item
+    {
+        height: 90px;
+    }
+
+
+
+    .about_info .content
+    {
+        width: 100%;
+    }
+
+
+    .about_info .advantages
+    {
+        display: flex;
+
+        width: 100%;
+        margin-top: 30px;
+        padding: 40px 75px;
+
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .about_info .advantages:before
+    {
+        right: -5px;
+        left: auto;
+    }
+
+    .about_info .advantages .item
+    {
+        width: calc(50% - 15px);
+    }
+
+    .about_info .advantages .item + .item
+    {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .about_info .advantages .item:nth-child(3),
+    .about_info .advantages .item:nth-child(4)
+    {
+        margin-top: 20px;
+    }
+
+
+
+    .contacts_info .info,
+    .contacts_info .feedback
+    {
+        width: 100%;
+    }
+
+    .contacts_info .info .item + .item
+    {
+        margin-top: 25px;
+        padding-top: 25px;
+    }
+
+
+    .contacts_info .map
+    {
+        height: 400px;
+    }
+
+
+
+    .project_info .slider
+    {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+
+    .project_info .owl-carousel .owl-nav button.owl-prev
+    {
+        left: 20px;
+    }
+
+    .project_info .owl-carousel .owl-nav button.owl-next
+    {
+        right: 20px;
+    }
+
+
+
+    .services .list
+    {
+        margin-bottom: -50px;
+        margin-left: 0;
+    }
+
+    .services .list > *
+    {
+        width: 100%;
+        margin-bottom: 50px;
+        margin-left: 0;
+    }
+
+    .services .list .service .info
+    {
+        width: calc(100% - 180px);
+    }
+
+    .services .list .service .link
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*---------------
+        Footer
+    ---------------*/
+    footer .info
+    {
+        padding: 30px 0;
+    }
+
+    footer .bottom
+    {
+        line-height: 18px;
+
+        padding: 20px 0;
+    }
+
+
+
+    footer .logo
+    {
+        margin-right: auto;
+    }
+
+
+    footer .menu
+    {
+        display: none;
+    }
+
+
+    footer .adres
+    {
+        display: block;
+
+        margin-left: 30px;
+        padding-left: 31px;
+    }
+
+    footer .adres:before
+    {
+        display: block;
+    }
+}
